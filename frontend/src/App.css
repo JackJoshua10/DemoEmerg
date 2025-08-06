@@ -1,0 +1,63 @@
+/* Additional custom styles for La Carreta */
+
+.font-peruvian {
+  font-family: 'Georgia', serif;
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Custom button hover effects */
+.btn-peru:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+}
+
+/* Cart animation */
+.cart-slide-enter {
+  transform: translateX(100%);
+}
+
+.cart-slide-enter-active {
+  transform: translateX(0);
+  transition: transform 300ms ease-in-out;
+}
+
+.cart-slide-exit {
+  transform: translateX(0);
+}
+
+.cart-slide-exit-active {
+  transform: translateX(100%);
+  transition: transform 300ms ease-in-out;
+}
+
+/* Loading animation */
+.loading-spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #C41E3A;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design helpers */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2.5rem;
+  }
+}
+
+/* Food card hover effect */
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
